@@ -1,0 +1,280 @@
+
+
+*{
+    padding-left: 400px;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(image/bg5.jpeg);
+    background-size: cover
+}
+:root{
+    --booy-color: #e4e9f7;
+    --sidebar-color: #fff;
+    --primary-color: #695cfe;
+    --primary-color-light: #eceaff;
+    --toggle-color: #dddd;
+    --text-color: gray;
+
+    --tran-03: all 0.2s ease ;
+    --tran-03: all 0.3s ease ;
+    --tran-03: all 0.4s ease ;
+    --tran-03: all 0.5s ease ;
+}
+
+body{
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.sidebar .text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sidebar .image{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+.sidebar li{
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: var(--sidebar-color);
+    padding: 10px 14px;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+}
+.sidebar li .icon,
+.sidebar li .text
+{
+    color: var(--text-color);
+}
+
+.sidebar li a{
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.sidebar .search-box{
+    background-color: var(--primary-color-light);
+}
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background-color: var(--primary-color-light);
+    border: none;
+    border-radius: 10px;
+}
+
+.sidebar .Logout li a span{
+    color: rgb(252, 39, 39);
+}
+.heading{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;    
+    justify-content: space-between;
+    margin: 40px 15%;
+}
+.companies .com{
+    height: 25px;
+    margin-right: 20px;   
+}
+
+#cam{
+    padding-left: 25%;
+
+}
+
+.companies{
+    display: flex; 
+    flex-direction: row ;
+    
+}
+.heading .sign_up div{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+.Experience{
+    text-align: center;
+    margin:20px 0 ;
+}
+.trans{
+    margin-top: 30px;
+}
+.tran{
+    margin-bottom: 20px;
+}
+.exp{
+    margin-top: 20px;
+}
+.network_img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.network{
+    display: flex;
+    flex-direction: row;
+}
+
+.network0{
+    margin-top: 100px;
+    padding-left: 75px;
+}
+
+.network1,
+.network2{
+    padding-bottom: 30px;
+}
+
+
+
+.del1{
+    display: flex;
+    flex-direction: row;
+}
+
+.delivery{
+    margin-left: 100px;
+}
+
+.deli_img{
+    margin-left: 150px;
+}
+
+.del2,
+.del3{
+    padding-bottom: 25px;
+}
+
+.del01{
+    margin-bottom: 5px;
+}
+
+.center_content{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cen1{
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;   
+    width: fit-content;    
+    
+}
+
+.growing{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.grow1{
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.growing_img{
+    padding-left: 150px;
+}
+
+.grow2{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.grow3{
+    margin-left: 100px;
+}
+
+.contents{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    border-top: solid;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: rgb(246, 241, 241);
+    vertical-align: top;
+}
+
+.head1,
+.head2{
+    margin-left: 650px;
+}
+
+.head1,
+.head2,
+.head3{
+    margin-bottom: 100px;    
+}
+
+.button{
+    margin-top: 10px;
+}
+
+.auction{
+    padding-left: 10px;
+}
+.cen001{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+.cen002{
+    margin-right: 175px;
+}
+.cen003{
+    margin-bottom: 10px;
+}
+.dis{
+    border: solid;
+    padding: 30px;
+    padding-left: 50px;
+    margin: 50px;
+    background-image: url(image/bg5.jpeg);
+    background-size: cover;
+}
+.head{
+    margin-right: 30px;
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction</title>
+    <link rel="icon" href="image/onl-auc-4.png">
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            background-image: url(image/bgg7.1.jpeg);
+            background-size: cover;
+            
+        } 
+        .item { 
+            margin-bottom: 20px;
+            border: solid;
+            border-radius: 2px;
+            border-width: 2px; 
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-right: 20px;
+            margin-left: 50px;
+            
+        } 
+        .item-title { 
+            font-weight:lighter; 
+            font-size: 18px;
+            margin-bottom: 4px;
+        } 
+        .item-price { 
+            color: #4caf50; 
+            font-size: 16px; 
+            margin-bottom: 4px;
+            font-size: 11px;
+            
+        } 
+        .item-time-left { 
+            color: #777; 
+            font-size: 14px; 
+            margin-bottom: 4px;
+            font-size: 11px;
+            margin-left: 20px;
+        } 
+        .buy-now-button { 
+            background-color: #f44336; 
+            color: white; 
+            padding: 8px 12px; 
+            text-decoration: none; 
+            font-size: 14px; 
+            margin-right: 5px; 
+            margin-top: 4px;
+            text-align: center;
+        }    
+        .imgs{
+            height: 100px;
+            margin: 20px 0px;
+        }
+        .item1{
+            display: flex;
+            flex-direction: row;
+        }
+        #items{
+            display: flex;
+            flex-direction: row;
+        }
+        .auc_img{
+            margin-left: 825px;
+        }
+        #but:hover{
+            zoom: 110%;
+        }
+        .buy-now-button:hover{
+            background-color:#9a160a;
+        }
+        .buy-now-button:active{
+            background-color:#fb0a0a ;
+        }
+        .overall{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid: 20px;
+        }
+        @media (max-width:1668px) {
+            .overall{
+                grid-template-columns: repeat(5,1fr);
+            }
+        } 
+        @media (max-width:1400px) {
+            .overall{
+                grid-template-columns: repeat(4,1fr);
+            }
+        } 
+        @media (max-width:1100px) {
+            .overall{
+                grid-template-columns: repeat(3,1fr);
+            }
+        } 
+        @media (max-width:800px) {
+            .overall{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media (max-width:480px){
+            .overall{
+                grid-template-columns: repeat(1,1fr);
+            }
+        } 
+    </style>
+</head>
+<body>
+    <section>
+        
+        <a class="ss" href="http://127.0.0.1:5500/auction_website/auction2.html">
+        <img style="height: 100px;" src="image/moneta img.jpeg">
+    </a>
+    <div class="auc_img">
+        <img style="height:30px; margin-right: 0px;" src="image/auction img.jpeg">
+        <img style="height: 40px; margin-left: 0px;" src="image/auc-logo2.jpeg">
+    </div>
+    <div id="items">
+        <h3 style="margin-left: 835px; margin-top: 50px;">All items</h3> 
+        <img style="height: 40px; margin-left: 0px; margin-top: 35px;" src="image/onl-auc 2.png">  
+    </div>
+    <div style="border: solid; border-radius:2px ; border-width: 2px; margin:20px 250px ; background-color: aquamarine; "> 
+        <h2 style="text-align: center;">Today's Special</h2>
+        <div style="display: flex;flex-direction: row;">
+            <img class="ring" style="height: 300px; width: 800px; margin-left: 100px; margin-bottom: 50px;" src="image/ribng img.webp">
+            <div style="margin-left: 100px; margin-top: 80px;" >
+                <div><h3>Mercury Ring</h3></div> 
+                <div>
+                    <div style="font-size: 15px;" class="item-price">$50 Starting Bid</div> 
+                    <div style="font-size: 15px; margin:10px 0px ;" class="item-time-left">Ends in 8hrs</div> 
+                </div>
+                <a style="margin-top: 300px;" href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button" id="but">Bid Now</a> 
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <h4 style="padding-left: 20px; margin-right: 0;">Cars</h4>
+        <img style="height: 30px; margin-top: 12px; margin-left: 0;" src="image/auction-item img.png">
+    </div>
+ 
+
+    <div class="overall">
+        <div class="item"> 
+            <div class="item-title">Item 1014</div> 
+            <div class="item-description"><b>Tesla</b></div> 
+            <img class="imgs" src="image/Tesla3.webp">
+            <div class="item1">
+                <div class="item-price">$50000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 12d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a> 
+        </div>
+
+        <div class="item"> 
+            <div class="item-title">Item 1015</div> 
+            <div class="item-description"><b>Lamborghini</b></div> 
+            <img class="imgs" src="image/lamborghiniimg.jpg">
+            <div class="item1">
+                <div class="item-price">$40000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 8d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a> 
+        </div>
+        
+        <div class="item"> 
+            <div class="item-title">Item 1016</div> 
+            <div class="item-description"><b>bugatti</b></div> 
+            <img class="imgs" src="image/bugatti img.jpeg">
+            <div class="item1">
+                <div class="item-price">$60000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 3d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        
+        </div>
+        
+        <div class="item"> 
+            <div class="item-title">Item 1017</div> 
+            <div class="item-description"><b>BMW</b></div> 
+            <img class="imgs" src="image/bmw img.jpeg">
+            <div class="item1">
+                <div class="item-price">$30000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 27d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+        
+        <div class="item"> 
+            <div class="item-title">Item 1018</div> 
+            <div class="item-description"><b>ferrari</b></div> 
+            <img class="imgs" src="image/ferrari img.webp">
+            <div class="item1">
+                <div class="item-price">$45000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 10d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+        
+        <div class="item"> 
+            <div class="item-title">Item 1019</div> 
+            <div class="item-description"><b>Rolls Royce</b></div> 
+            <img class="imgs" src="image/rolls royce image.jpeg">
+            <div class="item1">
+                <div class="item-price">$55000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 3d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+    </div>
+
+
+    <div style="display: flex; flex-direction: row;">
+        <h4 style="padding-left: 20px; margin-right: 0;">Bikes</h4>
+        <img style="height: 30px; margin-top: 12px; margin-left: 0;" src="image/onl-auc-3.png">
+    </div>   
+    <div class="overall">
+        <div class="item"> 
+            <div class="item-title">Item 1020</div> 
+            <div class="item-description"><b>Kawaski</b></div> 
+            <img class="imgs" src="image/kawaski img.jpeg">
+            <div class="item1">
+                <div class="item-price">$25000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 18d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+        <div class="item"> 
+            <div class="item-title">Item 1021</div> 
+            <div class="item-description"><b>BMW</b></div> 
+            <img class="imgs" src="image/bmw bike img.jpeg">
+            <div class="item1">
+                <div class="item-price">$37000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 10d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+        
+        <div class="item"> 
+            <div class="item-title">Item 1022</div> 
+            <div class="item-description"><b>KTM</b></div> 
+            <img class="imgs" src="image/ktm bike img.jpeg">
+            <div class="item1">
+                <div class="item-price">$35000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 18d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a> 
+        </div>
+        <div class="item"> 
+            <div class="item-title">Item 1023</div> 
+            <div class="item-description"><b>Ducati</b></div> 
+            <img class="imgs" src="image/ducati bike img.jpeg">
+            <div class="item1">
+                <div class="item-price">$45000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 10d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+        
+        <div class="item"> 
+            <div class="item-title">Item 1024</div> 
+            <div class="item-description"><b>Cruiser</b></div> 
+            <img class="imgs" src="image/cruiser bike img.jpeg">
+            <div class="item1">
+                <div class="item-price">$40000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 8d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+        
+        <div class="item"> 
+            <div class="item-title">Item 1025</div> 
+            <div class="item-description"><b>Royal Enfield</b></div> 
+            <img class="imgs" src="image/Royal Enfield.jpeg">
+            <div class="item1">
+                <div class="item-price">$40000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 8d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+    </div>
+
+
+    <h4 style="padding-left: 20px; margin-right: 0;">Paintings</h4>
+    <div class="overall">    
+        <div class="item"> 
+            <div class="item-title">Item 1026</div> 
+            <div class="item-description"><b>Mona Lisa</b></div> 
+            <img class="imgs" style="width: 150px; padding-left: 20px;" src="image/paint1.jpg">
+            <div class="item1">
+                <div class="item-price">$400000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 3hrs</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+
+        <div class="item"> 
+            <div class="item-title">Item 1027</div> 
+            <div class="item-description"><b>The Last Supper</b></div> 
+            <img class="imgs" src="image/paint2.webp">
+            <div class="item1">
+                <div class="item-price">$40000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 8d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+
+        <div class="item"> 
+            <div class="item-title">Item 1028</div> 
+            <div class="item-description"><b>Guernica</b></div> 
+            <img class="imgs" src="image/pa-3.webp">
+            <div class="item1">
+                <div class="item-price">$250000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 1d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+
+        <div class="item"> 
+            <div class="item-title">Item 1029</div> 
+            <div class="item-description"><b>Girl With a Pearl Earring</b></div> 
+            <img class="imgs" src="image/pa-4.webp">
+            <div class="item1">
+                <div class="item-price">$240000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 1d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+
+        <div class="item"> 
+            <div class="item-title">Item 1030</div> 
+            <div class="item-description"><b>The Birth of Venus</b></div> 
+            <img class="imgs" src="image/pa-5.webp">
+            <div class="item1">
+                <div class="item-price">$250000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 1d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+
+        <div class="item"> 
+            <div class="item-title">Item 1031</div> 
+            <div class="item-description"><b>Las Meninas</b></div> 
+            <img class="imgs" src="image/pa-6.webp">
+            <div class="item1">
+                <div class="item-price">$250000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 1d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Bid Now</a>
+        </div>
+    </div>
+
+
+    <div style="display: flex; flex-direction: row;">
+        <h4 style="padding-left: 20px;;">House</h4>
+        <img style="  height: 20px; margin-top: 20px;" src="image/house logo.jpeg">
+    </div>
+
+
+    <div class="overall">
+        <div class="item"> 
+            <div class="item-title">Item 1032</div> 
+            <div class="item-description"><b>America</b></div> 
+            <img class="imgs" src="image/house1.jpeg">
+            <div class="item1">
+                <div class="item-price">$250000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 1d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Buy Now</a>
+        </div>
+
+        <div class="item"> 
+            <div class="item-title">Item 1033</div> 
+            <div class="item-description"><b>England</b></div> 
+            <img class="imgs" src="image/house2.jpeg">
+            <div class="item1">
+                <div class="item-price">$300000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 21d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Buy Now</a>
+        </div>
+
+        <div class="item"> 
+            <div class="item-title">Item 1034</div> 
+            <div class="item-description"><b>Germany</b></div> 
+            <img class="imgs" src="image/house4.jpeg">
+            <div class="item1">
+                <div class="item-price">$250000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 19d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Buy Now</a>
+        </div>
+
+        <div class="item"> 
+            <div class="item-title">Item 1035</div> 
+            <div class="item-description"><b>Kerala</b></div> 
+            <img class="imgs" src="image/house5.jpeg">
+            <div class="item1">
+                <div class="item-price">$270000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 12d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Buy Now</a>
+        </div>
+
+        <div class="item"> 
+            <div class="item-title">Item 1036</div> 
+            <div class="item-description"><b>London</b></div> 
+            <img class="imgs" src="image/house6.jpeg">
+            <div class="item1">
+                <div class="item-price">$350000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 17d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Buy Now</a>
+        </div>
+
+        <div class="item"> 
+            <div class="item-title">Item 1037</div> 
+            <div class="item-description"><b>India</b></div> 
+            <img class="imgs" src="image/house7.jpeg">
+            <div class="item1">
+                <div class="item-price">$200000 Starting Bid</div> 
+                <div class="item-time-left">Ends in 13d</div> 
+            </div>
+            <a href="http://127.0.0.1:5500/auction_website/auction_item.html" target="_blank" class="buy-now-button">Buy Now</a>
+        </div>
+
+    </div>
+    <h1 style="text-align: center; padding: 50px;">Thanks For Visiting Us...</h1>
+    </section>
+</body>
+</html>
